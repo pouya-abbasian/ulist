@@ -5,11 +5,18 @@
 ## what is ulist target ? 
 ##### Quickly collect links to help youtube-dl - [ OR Similst Items ]
 -----------
-## How we can use it ? 
+## How we can install it ? 
 ```bash
 git clone https://github.com/pouya-abbasian/ulist && cd ulist
 ./installer
 ```
+-----------
+## How we can use it ? 
+```bash
+$ ulist
+wellcome !
+Please Enter Youtube Link ~> [ Paste Any Pages Link ]
+``` 
 And after the installation, you can use `ulist --help` command to get help.
 ### All together for each other, Good luck. 
  #Pouya-Abbasian <3 
