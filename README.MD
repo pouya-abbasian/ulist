@@ -11,5 +11,5 @@ git clone https://github.com/pouya-abbasian/ulist && cd ulist
 ./installer
 ```
 And after the installation, you can use `ulist --help` command to get help.
-### All together for each other, GoodLock. 
+### All together for each other, Good luck. 
  #Pouya-Abbasian <3 
