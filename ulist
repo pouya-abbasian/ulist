@@ -1,6 +1,29 @@
 #!/bin/bash
-echo 'wellcome !'
-read -p "Please Enter Youtube Link ~> " page
+showHelp() {
+	echo "Sometimes you are in a any sites and you want to have all of that about YouTube links. This software can help you
+	
+  Usage:
+    ulist [OPTION]
+
+  Options:
+  -h    Help
+        This option Shows help (what you currently see)
+
+  -p    Page
+        You can set the webpage, with -p switch, 
+        ex:
+        ulist -p https://youtube.com/...
+
+  -v    Verbose
+        This option make the script show more
+        information while execution.
+        
+"
+	
+	exit
+}
+
+work(){
 url='/tmp/'$RANDOM'.html'
 wget -O $url $page
 if [[ $? == "0" ]];then
@@ -18,3 +41,21 @@ if [[ $? == "0" ]];then
 else
 	exit 1
 fi
+}
+while getopts "hp" options; do
+	case "$options" in
+		h)
+			showHelp ;;
+		p)
+			page=$2 ;; # Set webpage
+	esac
+done
+echo 'wellcome !'
+if [ "$page" ];then
+	work
+else
+	read -p "Please Enter Youtube Link ~> " page
+fi
+
+
+
