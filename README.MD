@@ -17,6 +17,12 @@ $ ulist
 wellcome !
 Please Enter Youtube Link ~> [ Paste Any Pages Link ]
 ``` 
+## How we can use it ? 
+```bash
+$ ulist -p [ Paste Any Pages Link ]
+wellcome !
+...
+```
 And after the installation, you can use `ulist --help` command to get help.
 ### All together for each other, Good luck. 
  #Pouya-Abbasian <3 
