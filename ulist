@@ -55,6 +55,7 @@ if [ "$page" ];then
 	work
 else
 	read -p "Please Enter Youtube Link ~> " page
+	work
 fi
 
 
